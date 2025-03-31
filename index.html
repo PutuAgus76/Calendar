@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Atur jadwal dengan Kalender ramah pengguna yang dilengkapi acara, pengingat, dan antarmuka yang dapat disesuaikan. Dibangun dengan HTML, CSS, dan JavaScript. Mulai menjadwalkan hari ini!"
+    />
+    <meta
+      name="keywords"
+      content="kalender, acara, pengingat, javascript, html, css, kode sumber terbuka"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css"/>
+    <title>Kalender dengan Acara</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="kiri">
+        <div class="kalender">
+          <div class="bulan">
+            <i class="fas fa-angle-left sebelumnya"></i>
+            <div class="tanggal">desember 2015</div>
+            <i class="fas fa-angle-right berikutnya"></i>
+          </div>
+          <div class="hari-minggu">
+            <div>Min</div>
+            <div>Sen</div>
+            <div>Sel</div>
+            <div>Rab</div>
+            <div>Kam</div>
+            <div>Jum</div>
+            <div>Sab</div>
+          </div>
+          <div class="hari"></div>
+          <div class="ke-hari-ini">
+            <div class="pergi-ke">
+              <input type="text" placeholder="bb/tttt" class="input-tanggal" />
+              <button class="tombol-pergi">Pergi</button>
+            </div>
+            <button class="tombol-hari-ini">Hari ini</button>
+          </div>
+        </div>
+      </div>
+      <div class="kanan">
+        <div class="tanggal-hari-ini">
+          <div class="hari-acara">Sen</div>
+          <div class="tanggal-acara">12 desember 2022</div>
+        </div>
+        <div class="acara"></div>
+        <div class="wrapper-tambah-acara">
+          <div class="header-tambah-acara">
+            <div class="judul">Tambah Acara</div>
+            <i class="fas fa-times tutup"></i>
+          </div>
+          <div class="body-tambah-acara">
+            <div class="input-tambah-acara">
+              <input type="text" placeholder="Nama Acara" class="nama-acara" />
+            </div>
+            <div class="input-tambah-acara">
+              <input
+                type="text"
+                placeholder="Waktu Mulai"
+                class="waktu-mulai"
+              />
+            </div>
+            <div class="input-tambah-acara">
+              <input
+                type="text"
+                placeholder="Waktu Selesai"
+                class="waktu-selesai"
+              />
+            </div>
+          </div>
+          <div class="footer-tambah-acara">
+            <button class="tombol-tambah-acara">Tambah Acara</button>
+          </div>
+        </div>
+      </div>
+      <button class="tambah-acara">
+        <i class="fas fa-plus"></i>
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
